@@ -1,0 +1,656 @@
+/* 
+STYLING IS ORDERED APPROXIMATELY AS FOLLOWS:
+	ITEMS SHARED ACROSS ALL PAGES - HEADER, FOOTER, BODY, ASIDE
+	ITEMS SPECIFIC TO PAGES 
+		INDEX
+		CONTACT
+		PORTFOLIO
+
+	BOTTOM SECTIONS ARE FOR RESPONSIVE DESIGN IN SMALLER WINDOWS
+ */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, 'Helvetica Neue', sans-serif, serif;
+	background-repeat: repeat;
+	background-color: #dddddd;
+	background-image: url("../images/asanoha-400px.png");
+}
+
+/* MISC COLOR / BACKGROUND STYLING ACROSS PAGES */
+
+	/*  Next two items format text blocks within pages */
+.title-background-color {
+	background-color: rgb(0,43,92) ;
+}
+
+.title-text{
+	color: rgb(251,208,25);
+}
+
+	/* Format header and link font colors */
+.theme-text-color {
+	color: rgb(0,43,92) ;
+}
+
+
+/* NAVBAR STYLING */
+
+	/* Following items make a horizontal nav bar */
+#navbar {
+	width: auto;
+	border-bottom: 1px solid #cccccc;
+	height: 70px;
+	list-style: none;
+	text-align: center;
+	background-color: white;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	margin: 0px 0px 50px 0px;
+	padding-left: 40;
+}
+
+	/* Create horizontal nav links */
+.nav-items {
+	display: inline; 
+}
+
+	/* Create site nav bar links and move right */
+.page-links {
+	float: right;
+	width: 10%;
+	font-size: 12px;
+	border-right: 1px solid #cccccc;
+	height: 70px;
+}
+
+	/* Style Brandon's name box */
+ul li:nth-of-type(1) {
+	margin-left: 50px;
+	float: left;
+	font-size: 24px;
+	padding: 20px 10px;
+	height: 30px;
+}
+
+	/* Push links to left, style to remove right border */
+ul li:nth-of-type(2) {
+    margin-right: 100px;
+    border: none;
+}
+
+	/* Format page link text contents */
+.page-links a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 20px;
+	padding: 25px 0px;
+}
+
+	/* on hover, receive the title-text and background theme colors */
+.click-link:hover{
+	background-color: rgb(251,208,25);
+	color: rgb(0,43,92);
+}
+
+/* BODY STYLING - ABOUT ME, PORTFOLIO, CONTACT FORM SHARED ITEMS*/
+
+	/* style body - includes about me, portfolio, and contact form across those 3 pages */
+
+.main-content {
+	float: left;
+	margin: 0px 0px 20px 90px;
+	width: 60%;
+	min-width: 450px;
+	max-width: 600px;
+	height: 50%;
+	padding: 10px;
+	background-color: white;
+}
+
+	/* Body and aside heading format in body and aside */
+h2 {
+	margin: 0px 0px 10px 0px;
+	font-size: 24px;
+	border-bottom: 2px solid #dddddd;
+	text-align: left;
+}
+
+/* ASIDE STYLING */
+
+	/* aside styling */
+.connect-aside {
+	float: left;
+	text-align: center;
+	width: 250px;
+	height: auto;
+	margin-left: 90px;
+	padding: 10px;
+	background-color: white;
+} 
+
+	/* Format the social media link icons in aside */
+.social-links {
+ 	width: 50px;
+	height: 50px; 
+	display: block;
+	margin: 15px;
+	float: left;  
+	text-align: center;
+}
+
+	/* Format embeded images to serve as clickable link area */
+.social-icons {
+	width: 100%;
+	height: 100%;
+}
+
+/* FOOTER STYLING */
+
+	/* Sticky footer formatted over next 4 items */
+.push, .footer {
+	height: 25px;
+	clear: both;
+}
+
+	/* Used primarily for sticky footer */
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -26px;
+}
+
+.footer {
+	border-top: 1px solid rgb(251,208,25);
+	text-align: center;
+}
+
+#footer-text {
+	margin: 0;
+	height: 100%;
+}
+
+/* INDEX SPECIFIC ITEMS FORMATTING*/
+
+#brandon-profile-pic {
+	margin: 10px 10px 10px 0px;
+	float: left;
+	height: 120px;
+	width: 120px;
+}
+
+.about-me-text {
+	line-height: 150%;
+}
+
+#go-blue {
+	font-size: 150%;
+	color: rgb(0,43,92);
+}
+
+
+/* CONTACT PAGE SPECIFIC ITEMS */
+
+.contact-label {
+	text-align: left;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.contact-input {
+	border: 1px solid #dddddd;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+#message-input {
+	resize: none;
+	overflow: auto;
+	outline: none;
+}
+
+
+	/* Submit button formatting */
+input[type="submit"] {
+	width: 20%;
+	height: 30px;
+	margin-bottom: 0;
+}
+
+/* PORTFOLIO SPECIFIC ITEMS */
+
+.panel {
+	margin: 0px 50px 20px 50px;
+	float: left;
+	padding: 0;
+}
+
+	/* Images are clickable links contained in these anchors */
+.panel-link {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	position: relative;
+	display: block;
+}
+
+	/* Clickable links...both picture and text are clickable by design */
+.portfolio-image {
+	width: 175px;
+	height: 175px;
+	text-align: center;
+}
+
+	/* Text box to overlay links */
+.panel-text {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	padding: 5px 0px;
+	bottom: 30px;
+}
+
+
+@media screen and (max-width: 980px) {
+
+body { background-color: red; }
+
+#navbar {
+width: auto;
+height: 50px;
+margin: 0px 0px 30px 0px;
+padding-left: 20px;
+}
+
+
+.page-links {
+	float: right;
+	width: 10%;
+	height: 50px;
+}
+
+	/* Style Brandon's name box */
+ul li:nth-of-type(1) {
+	margin-left: 0px;
+	float: left;
+	font-size: 20px;
+	padding: 10px 10px;
+	height: 30px;
+}
+
+	/* Push links to left, style to remove right border */
+ul li:nth-of-type(2) {
+    margin-right: 50px;
+}
+
+
+.page-links a {
+	width: 100%;
+	height: 20px;
+	padding: 20px 0px;
+}
+
+
+.main-content {
+	float: left;
+	margin: 0px 0px 20px 20px;
+	width: 60%;
+	min-width: 300px;
+	max-width: 475px;
+	height: 40%;
+	padding: 10px;
+}
+
+
+h2 {
+	margin: 0px 0px 10px 0px;
+	font-size: 20px;
+}
+
+.connect-aside {
+	float: left;
+	width: 200px;
+	height: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 8px;
+} 
+
+
+	/* Format the social media link icons in aside */
+.social-links {
+ 	width: 40px;
+	height: 40px; 
+	margin: 10px;
+	float: left;  
+}
+
+	/* Format embeded images to serve as clickable link area */
+.social-icons {
+	width: 100%;
+	height: 100%;
+}
+
+#brandon-profile-pic {
+	margin: 10px 10px 10px 0px;
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+
+.panel {
+	margin: 0px 20px 10px 20px;
+	float: left;
+	padding: 0;
+}
+
+	/* Images are clickable links contained in these anchors */
+.panel-link {
+	width: 100%;
+	height: 100%;
+}
+
+	/* Clickable links...both picture and text are clickable by design */
+.portfolio-image {
+	width: 175px;
+	height: 140px;
+}
+
+	/* Text box to overlay links */
+.panel-text {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	padding: 5px 0px;
+	bottom: 32px;
+	font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+#navbar {
+width: auto;
+height: 40px;
+margin: 0px 0px 25px 0px;
+padding-left: 15px;
+}
+
+
+.page-links {
+	float: right;
+	width: 10%;
+	height: 40px;
+}
+
+	/* Style Brandon's name box */
+ul li:nth-of-type(1) {
+	margin-left: 0px;
+	float: left;
+	font-size: 18px;
+	padding: 10px 10px;
+	height: 20px;
+}
+
+	/* Push links to left, style to remove right border */
+ul li:nth-of-type(2) {
+    margin-right: 40px;
+}
+
+
+.page-links a {
+	width: 100%;
+	height: 20px;
+	padding: 10px 0px;
+}
+
+
+.main-content {
+	float: left;
+	margin: 0px 0px 20px 20px;
+	width: 65%;
+	min-width: 250px;
+	max-width: 400px;
+	height: 50%;
+	padding: 10px;
+}
+
+
+h2 {
+	margin: 0px 0px 10px 0px;
+	font-size: 20px;
+}
+
+.connect-aside {
+	float: left;
+	width: 200px;
+	height: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 8px;
+} 
+
+
+	/* Format the social media link icons in aside */
+.social-links {
+ 	width: 30px;
+	height: 30px; 
+	margin: 10px;
+	float: left;  
+}
+
+	/* Format embeded images to serve as clickable link area */
+.social-icons {
+	width: 100%;
+	height: 100%;
+}
+
+#brandon-profile-pic {
+	margin: 8px 8px 8px 0px;
+	float: left;
+	height: 80px;
+	width: 80px;
+}
+
+
+.panel {
+	margin: 0px 20px 10px 20px;
+	float: left;
+	padding: 0;
+}
+
+	/* Images are clickable links contained in these anchors */
+.panel-link {
+	width: 100%;
+	height: 100%;
+}
+
+	/* Clickable links...both picture and text are clickable by design */
+.portfolio-image {
+	width: 150px;
+	height: 125px;
+}
+
+	/* Text box to overlay links */
+.panel-text {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	padding: 5px 0px;
+	bottom: 25px;
+	font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+nav {
+	padding: 0;
+	margin: 0;
+}
+
+#navbar {
+width: auto;
+height: 50px;
+margin: 0 0 10px;
+padding: 0;
+}
+
+
+.page-links {
+	float: right;
+	width: 33%;
+	height: 50px;
+	padding: 0;
+}
+
+	/* Style Brandon's name box */
+ul li:nth-of-type(1) {
+	display: none;
+	/*margin-left: 0px;
+	float: left;
+	font-size: 16px;
+	padding: 10px 10px;
+	height: 30px;
+	clear: both;*/
+}
+
+	/* Push links to left, style to remove right border */
+ul li:nth-of-type(2) {
+    margin-right: 0px;
+}
+
+
+.page-links a {
+	width: 100%;
+	height: 20px;
+	padding: 20px 0px;
+}
+
+
+.main-content {
+	float: none;
+	margin: 0px auto 10px auto;
+	width: 90%;
+	min-width: 100px;
+	height: auto;
+	padding: 5px;
+}
+
+
+h2 {
+	margin: 0px 0px 10px 0px;
+	font-size: 16px;
+}
+
+.about-me-text {
+	font-size: 12px;
+	line-height: 125%;
+	margin-bottom: 5px;
+}
+
+
+.connect-aside {
+	float: none;
+	margin: 0px auto 10px auto;
+	width: 90%;
+	height: auto;
+	padding: 5px;
+	max-width: 400px;
+} 
+
+	/* Format the social media link icons in aside */
+.social-links {
+ 	width: 50px;
+	height: 30px; 
+	margin: 5px 10px;
+	float: none;
+	display: inline-block;  
+}
+
+	/* Format embeded images to serve as clickable link area */
+.social-icons {
+	width: 75%;
+	height: 100%;
+}
+
+#brandon-profile-pic {
+	margin: 5px 10px 10px 0px;
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+/*.portfolio {
+	margin: 0;
+	padding: 0;
+}*/
+
+.panel {
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	float: left;
+	width: 100%;
+	height: 40px;
+}
+
+	/* Images are clickable links contained in these anchors */
+.panel-link {
+/*	width: 75px;
+	height: 75px;*/
+	/*display: block;*/
+	height: auto;
+}
+
+	/* Clickable links...both picture and text are clickable by design */
+.portfolio-image {
+	display: none;
+/*	width: 75px;
+	height: 75px;*/
+}
+
+	/* Text box to overlay links */
+.panel-text {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 10px 0px;
+	position: static;
+	padding: 5px 0px;
+	bottom: 0;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bolder;
+	border-radius: 10px;
+}
+
+.panel-text:hover{
+	background-color: rgb(251,208,25);
+	color: rgb(0,43,92);
+}
+
+
+.clearix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+
+}

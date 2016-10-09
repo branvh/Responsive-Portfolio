@@ -1,0 +1,113 @@
+body {
+	font-family: Arial, 'Helvetica Neue', sans-serif, serif;
+	margin: 0;
+	padding: 0;	
+	color: #777777;
+	background-color: #aaaaaa;
+	border: 1px solid #dddddd;
+}
+
+#navbar {
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	height: 70px;
+	list-style: none;
+	text-align: center;
+	background-color: #ffffff;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	margin: 0px 0px 50px 0px;
+}
+
+.nav-items {
+	height: 30px;
+	display: inline; 
+	padding: 20px; 
+}
+
+#your-name {
+	margin-left: 50px;
+	background-color: green;
+	color: white;
+	float: left;
+	font-size: 24px;
+}
+
+.page-links {
+	float: right;
+	width: 10%;
+	font-size: 12px;
+	border-right: 1px solid #cccccc;
+}
+
+#link3 {
+	border: none;
+	margin-right: 100px;
+}
+
+.page-links a {
+	text-decoration: none;
+	color: #777777;
+}
+
+.page-links:hover{
+	color: white;
+	background-color: black;
+}
+
+.container {
+	float: left;
+	padding: 10px;
+	background-color: white;
+}
+
+#body {
+	margin: 0px 20px 20px 90px;
+	width: 50%;
+	min-width: 30%;
+}
+
+h2 {
+	margin: 0px 10px 10px 0px;
+	font-size: 24px;
+	color: green;
+	border-bottom: 2px solid #dddddd;
+}
+
+#brandon-profile-pic {
+	margin: 0px 10px 10px 0px;
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+.about-me-text {
+	line-height: 150%;
+}
+
+#connect-aside {
+	float: left;
+	width: 30%;
+}
+
+h3 {
+	margin: 0px 10px 10px 0px;
+	font-size: 18px;
+	color: green;
+	border-bottom: 2px solid #dddddd;
+}
+
+.social-icons {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+footer {
+	border-top: 2px solid green;
+	text-align: center;
+	position: fixed;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
